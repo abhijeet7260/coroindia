@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coronavirus Outbreak in India</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+    <h1 id='root_title'>
+        Coronavirus Outbreak in India
+    </h1>
+    <hr id="first_hr">
+
+    <div class="flex-container">
+
+    <div class="float-child" >
+        {{ tStrToLoad | safe }}
+    </div>
+        <div class="float-child">
+            {{ lol | safe }}
+        </div>
+    </div>
+</body>
+</html>
